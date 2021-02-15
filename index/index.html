@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script src="../javascript/index.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>ToDoリスト課題</title>
   </head>
@@ -16,10 +15,8 @@
       <input type="checkbox" id="#"> 完了
     </div>
 
-    <p></p>
-
       <table>
-        <thead>
+        <thead> <!-- theadタグは水平方向にグループ化する-->
           <th>ID</th>
           <th>コメント</th>
           <th>状態</th>
@@ -27,8 +24,12 @@
         <tbody class="addTask-target"></tbody>
       </table>
 
+      <ul>
+      </ul>
+
     <h2>新規タスクの追加</h2>
-      <input type="text" class="addTask-value">
-      <input type="submit" class="addTask-trigger" id="button1" value="追加">
+      <input type="text" class="addTask-value" id="todoText">
+      <button type="submit" class="addTask-trigger" id="button1">追加</button>
+      <script src="../javascript/index.js"></script>
   </body>
 </html>
